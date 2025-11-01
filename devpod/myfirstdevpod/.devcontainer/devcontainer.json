@@ -3,5 +3,8 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "scripts/setup"
+  "postCreateCommand": "scripts/setup",
+  "mounts": [
+      "source=/Users/ericsaindon/git,target=/host/git,type=bind"
+  ]
 }
